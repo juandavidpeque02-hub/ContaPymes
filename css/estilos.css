@@ -1,0 +1,150 @@
+:root {
+    --color-principal: #1E90FF;
+    --primary-light: #63B8FF;
+    --tg: #f8fafc;
+    --surface: #ffffff;
+    --text-color: #000000;
+    --text-muted: #64748b;
+    --border: #e5e7eb;
+    --focus-ring: #bfdbfe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--tg);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    background-color: var(--surface);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 0.75rem;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.1),
+        0 20px 48px rgba(0, 0, 0, 0.1);
+
+    position: relative;
+    z-index: 10;
+}
+
+.login-box {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-box h1 {
+    font-size: 1.75rem;
+    color: var(--color-principal);
+    margin-bottom: 0.5rem;
+}
+
+.login-box p {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.675rem;
+    font-weight: 500;
+    margin-left: 0.35rem;
+    color: var(--text-color);
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+
+    font-size: 1rem;
+    background-color: var(--surface);
+
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.remember-me input[type="checkbox"] {
+    accent-color: var(--color-principal);
+    cursor: pointer;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem 1rem;
+
+    background-color: var(--color-principal);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s,
+        transform 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+.login-footer {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-top: 1rem;
+}
+
+.login-footer a {
+    color: var(--color-principal);
+    text-decoration: none;
+
+    transition: color 0.2s;
+}
+
+.login-footer a:hover {
+    color: var(--primary-light);
+}                       

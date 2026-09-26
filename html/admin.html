@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTA - Panel</title>
+
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+    <div class="panel">
+        <header>
+            <h1>CONTA</h1>
+            <p>Panel de administración</p>
+        </header>
+        <nav>
+            <a href="#consignacion">Consignación</a>
+            <a href="#saldos">Verificación de saldos</a>
+            <a href="#movimientos">Movimientos</a>
+        </nav>
+        <section id="consignacion">
+            <h2>Consignación</h2>
+            <form>
+
+                <label>Nombre</label>
+                <input type="text" placeholder="Nombre del cliente">
+
+                <label>Número de cuenta</label>
+                <input type="text" placeholder="Número de cuenta">
+
+                <label>Valor</label>
+                <input type="number" placeholder="Valor a consignar">
+
+                <button type="submit">Consignar</button>
+
+            </form>
+        </section>
+            <section id="saldos">
+            <h2>Verificación de saldos</h2>
+
+            <label>Número de cuenta</label>
+            <input type="text" placeholder="Número de cuenta">
+
+            <button>Consultar saldo</button>
+
+            <p class="saldo">Saldo disponible: $0</p>
+        </section>
+
+
+        <section id="movimientos">
+            <h2>Movimientos</h2>
+
+            <p class="sin-movimientos">Sin movimientos</p>
+        </section>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+:root {
+    --azul: #1E90FF;
+    --azul-claro: #63B8FF;
+    --fondo: #f4f7fb;
+    --blanco: #ffffff;
+    --borde: #e5e7eb;
+    --texto: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+}
+
+.panel {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+header {
+    background-color: var(--blanco);
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: var(--azul);
+}
+
+header p {
+    margin-top: 5px;
+}
+
+nav {
+    background-color: var(--blanco);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--azul);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+section {
+    background-color: var(--blanco);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: var(--azul);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--borde);
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--azul);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--azul-claro);
+}
+
+.saldo {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.sin-movimientos {
+    color: #64748b;
+}
